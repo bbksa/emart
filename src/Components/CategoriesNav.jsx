@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Nav, NavDropdown, Container, Row, Card, Col} from "react-bootstrap";
+import { Nav, NavDropdown, Container, Row, Card} from "react-bootstrap";
 
 class CategoriesNavigation extends Component {
   handleSelect = (eventKey) => alert(`selected ${eventKey}`);

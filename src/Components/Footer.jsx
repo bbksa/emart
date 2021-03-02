@@ -2,7 +2,7 @@ import React, { Component }  from "react";
 import { Container, Row, Col, Form, InputGroup, FormControl, Button } from "react-bootstrap";
 import { MdEmail, MdLocationOn, MdCall } from "react-icons/md";
 import { FaFacebookSquare, FaTwitterSquare, FaLinkedin, FaPinterestSquare, FaWhatsappSquare, FaGooglePlusSquare, FaRssSquare } from "react-icons/fa";
-import { FcShop, FcAbout } from "react-icons/fc";
+import { FcShop, FcAbout, FcLock, FcFile } from "react-icons/fc";
 
 class Footer extends Component {
  state = {};
@@ -14,15 +14,15 @@ class Footer extends Component {
           <Row style={{ display: "flex"}}>
               <Col>
                   <div> 
-                    <h3>Payment</h3>
+                    <h3>Payment Services</h3>
                     <hr color ="Yellow"/>
-                        <a href="https://www.facebook.com/bbksa" style={{decoration:"none"}}><FaFacebookSquare color="white" size= "25px"/></a>{" "}
-                        <a href="https://twitter.com/bibekkrsah"><FaTwitterSquare color="white" size= "25px"/></a>{" "}
-                        <a href="https://www.linkedin.com/in/bbksa"><FaLinkedin color="white" size= "25px"/></a>{" "}
-                        <a href="https://www.pinterest.com/bbk_sa"><FaPinterestSquare color="white" size= "25px"/></a>{" "}
-                        <a href="https://wa.me/917497044831"><FaWhatsappSquare color="white" size= "25px"/></a>{" "}
-                        <a href="#googleplus"><FaGooglePlusSquare color="white" size= "25px"/></a>{" "}
-                        <a href="#rss"><FaRssSquare color="white" size= "25px"/></a>
+                    <h5>We accept...</h5>
+                    <ul>
+                      <li>Cass on Delivery</li>
+                      <li>Bank Payment</li>
+                      <li>Credit/Debit Card</li>
+                      <li>Mobile Wallet</li>
+                    </ul>
                   </div>
               </Col>
               <Col>
@@ -88,10 +88,10 @@ class Footer extends Component {
                   <div>
                     <h4>Information</h4>
                     <hr color ="Yellow"/>
-                      <FcAbout size= "20px"/> {"  "} <a href="about.html" style={{textDecoration:"none", color:"white"}}>About Us</a><br/>
-                      <FcShop size= "20px"/> {"  "} <a href="Product.html" style={{textDecoration:"none", color:"white"}}> Shop</a><br/>
-                      <a href="#" style={{textDecoration:"none", color:"white"}}>Privacy Policy</a><br/>
-                      <a href="#" style={{textDecoration:"none", color:"white"}}>Terms &amp; Conditions</a>
+                      <FcAbout size= "20px"/> <a href="about.html" style={{textDecoration:"none", color:"white"}}>About Us</a><br/>
+                      <FcShop size= "20px"/> <a href="Product.html" style={{textDecoration:"none", color:"white"}}> Shop</a><br/>
+                      <FcLock size= "20px"/> <a href="#" style={{textDecoration:"none", color:"white"}}> Privacy Policy </a><br/>
+                      <FcFile size= "20px"/> <a href="#" style={{textDecoration:"none", color:"white"}}> Terms &amp; Conditions </a>
                   </div>
               </Col>
               <Col>

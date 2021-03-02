@@ -22,10 +22,7 @@ class TopNav extends Component {
 
         <Form inline>
           <FormControl type="text" placeholder="Search Product..." className="mr-sm-2" />
-          <Button variant="outline-light">
-            <MdSearch/>
-          </Button>
-          &nbsp;
+          <Button variant="outline-light"> <MdSearch/> </Button> &nbsp;
         </Form>
           <button type="button" class="btn btn-primary" style = {{align:"right"}}>
             Cart &nbsp;<FaCartPlus/> <span class="badge badge-light">9</span>

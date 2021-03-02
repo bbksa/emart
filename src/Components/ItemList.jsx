@@ -22,8 +22,8 @@ class ItemOnHome extends Component {
                 <Card.Body>
                   <Card.Title align={"center"}>iPhone 12 Pro Max</Card.Title>
                   <Card.Text align={"center"}>
-                    <b>₹ 1,39,999 </b>{" "}
-                    <strike style={{ color: "red" }}>₹ 1,59,999</strike>{" "}
+                    <b>₹ 1,39,999</b> &nbsp;&nbsp;
+                    <strike style={{ color: "red" }}>₹ 1,59,999</strike>&nbsp;&nbsp;
                     <b style={{ color: "green" }}>12% off</b>
                   </Card.Text>
                   <Button variant="primary">Buy Now</Button>
@@ -42,8 +42,8 @@ class ItemOnHome extends Component {
                 <Card.Body>
                   <Card.Title align={"center"}>Microsoft Surface Book 3</Card.Title>
                   <Card.Text align={"center"}>
-                    <b>₹ 1,24,999 </b>{" "}
-                    <strike style={{ color: "red" }}>₹ 2,49,999</strike>{" "}
+                    <b>₹ 1,24,999</b>&nbsp;&nbsp;
+                    <strike style={{ color: "red" }}>₹ 2,49,999</strike>&nbsp;&nbsp;
                     <b style={{ color: "green" }}>50% off</b>
                   </Card.Text>
                   <Button variant="primary">Buy Now</Button>
@@ -59,13 +59,13 @@ class ItemOnHome extends Component {
                   variant="top"
                   src="/Images/Product/product3.jpg"
                   height="250"
-                  style={{paddingBottom:25,paddingTop:25}}
+                  style={{paddingBottom:25, paddingTop:25}}
                 />
                 <Card.Body>
                   <Card.Title align={"center"}>Samsung Full HD Smart TV</Card.Title>
                   <Card.Text align={"center"}>
-                    <b>₹ 39,900 </b>{" "}
-                    <strike style={{ color: "red" }}>₹ 49,999</strike>{" "}
+                    <b>₹ 39,900</b>&nbsp;&nbsp;
+                    <strike style={{ color: "red" }}>₹ 49,999</strike>&nbsp;&nbsp;
                     <b style={{ color: "green" }}>20% off</b>
                   </Card.Text>
                   <Button variant="primary">Buy Now</Button>
