@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {Carousel} from "react-bootstrap";
-import { Container, Row, Card, Col, Button } from "react-bootstrap";
+import { Container, Row, Card, Col, Button, Form, Dropdown } from "react-bootstrap";
 
 
 class MobileAccessories extends Component {
@@ -12,67 +12,37 @@ class MobileAccessories extends Component {
         <Carousel>
             <Carousel.Item>
                 <a href="#s3">
-                    <img
-                    className="d-block w-100"
-                    src="/Images/Slide/Ms1.jpg"
-                    height="300px"
-                    alt="Fourth slide"
-                    />
+                    <img className="d-block w-100" src="/Images/Slide/Ms1.jpg" height="300px" alt="Fourth slide"/>
                 </a>
             </Carousel.Item>
             <Carousel.Item>
                 <a href="#s1">
-                    <img
-                    className="d-block w-100"
-                    src="/Images/Slide/Ms2.png"
-                    alt="First slide"
-                    height="300px"
-                    />
+                    <img className="d-block w-100" src="/Images/Slide/Ms2.png" alt="First slide" height="300px"/>
                 </a>
             </Carousel.Item>
             <Carousel.Item>
                 <a href="#s2">
-                    <img
-                    className="d-block w-100"
-                    src="/Images/Slide/Ms3.jpg"
-                    height="300px"
-                    alt="Second slide"
-                    />
+                    <img className="d-block w-100" src="/Images/Slide/Ms3.jpg" height="300px" alt="Second slide"/>
                 </a>
             </Carousel.Item>
             <Carousel.Item>
                 <a href="#s3">
-                    <img
-                    className="d-block w-100"
-                    src="/Images/Slide/Ms4.png"
-                    height="300px"
-                    alt="Third slide"
-                    />
+                    <img className="d-block w-100" src="/Images/Slide/Ms4.png" height="300px" alt="Third slide"/>
                 </a>
             </Carousel.Item>
             <Carousel.Item>
                 <a href="#s2">
-                    <img
-                    className="d-block w-100"
-                    src="/Images/Slide/Ms5.png"
-                    height="300px"
-                    alt="Second slide"
-                    />
+                    <img className="d-block w-100" src="/Images/Slide/Ms5.png" height="300px" alt="Second slide"/>
                 </a>
             </Carousel.Item>
             <Carousel.Item>
                 <a href="#s3">
-                    <img
-                    className="d-block w-100"
-                    src="/Images/Slide/slide1.jpg"
-                    height="300px"
-                    alt="Third slide"
-                    />
+                    <img className="d-block w-100" src="/Images/Slide/slide1.jpg" height="300px" alt="Third slide"/>
                 </a>
             </Carousel.Item>
         </Carousel>
 
-        <hr/>
+        <hr  style={{backgroundColor:"white"}}/>
         <h6 inline align="center"><b>Sort By:</b> &nbsp;&nbsp;&nbsp;&nbsp;
         <a href="#sort" style={{textDecoration:"none"}}>Price - Low to High</a>&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="#sort" style={{textDecoration:"none"}}>Price - High to Low</a>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -82,18 +52,58 @@ class MobileAccessories extends Component {
 
         <Container fluid>
             <Row>
-                <Col>
-                    <Container>
-                        <div style={{backgroundColor:"red"}}>
-                            Hello
-                        </div>
+                <Col xs={2.5} >
+                    <Container style={{marginLeft: "10%", backgroundColor: "white", height:"100%", width:"100%"}} >
+                        <Card.Body>
+                            <Card.Title align={"center"}>Filters <hr color="black"/></Card.Title>
+                            
+                            <Card.Text>
+                                <div >
+                                    
+                                    <Form>
+                                        <Form.Group controlId="formBasicRange">
+                                            <b>Price</b>
+                                            <Form.Control type="range" />
+                                            <Dropdown inline>
+                                                <Dropdown.Toggle variant="Secondary" id="dropdown-basic">Min</Dropdown.Toggle>
+                                                <Dropdown.Menu>
+                                                    <Dropdown.Item href="#/action-1">500</Dropdown.Item>
+                                                    <Dropdown.Item href="#/action-2">1000</Dropdown.Item>
+                                                    <Dropdown.Item href="#/action-3">1500</Dropdown.Item>
+                                                </Dropdown.Menu>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <Dropdown.Toggle variant="Secondary" id="dropdown-basic">Max</Dropdown.Toggle>
+                                                    <Dropdown.Menu>
+                                                        <Dropdown.Item href="#/action-1">1000</Dropdown.Item>
+                                                        <Dropdown.Item href="#/action-2">5000</Dropdown.Item>
+                                                        <Dropdown.Item href="#/action-3">10000</Dropdown.Item>
+                                                    </Dropdown.Menu>
+                                            </Dropdown>
+                                                
+                                        </Form.Group>
+                                    </Form>
+                                    <hr color="black"/>
+
+                                    <Form.Group id="formGridCheckbox">
+                                    <b>Brand</b>
+                                        <Form.Check type="checkbox" label="Samsung"/>
+                                        <Form.Check type="checkbox" label="Apple"/>
+                                        <Form.Check type="checkbox" label="Google"/>
+                                        <Form.Check type="checkbox" label="Vivo"/>
+                                        <Form.Check type="checkbox" label="One+"/>
+                                        <Form.Check type="checkbox" label="Xaumi"/>
+                                        <Form.Check type="checkbox" label="Oppo"/>
+                                    </Form.Group>
+                                </div>
+                            </Card.Text>
+                        </Card.Body>
                     </Container>
                 </Col>
                 
-                <Col>
-                    <Container style={{backgroundColor:"whitesmoke"}}>
-                        <Row>
-                            <Col>
+                <Col xs={9.8}>
+                    <Container style={{ marginLeft: "5%", backgroundColor:"whitesmoke" }}>
+                        <Row style={{backgroundColor:"white", paddingTop:"2%", paddingBottom:"2%", paddingLeft:"2.5%"}}>
+                            <Col style={{ paddingBottom:"2%"}}>
                                 <Card style={{ width: "18rem"}}>
                                     <Carousel variant="top" controls={false}>
                                         <Carousel.Item>
@@ -124,7 +134,7 @@ class MobileAccessories extends Component {
                                     </Card.Body>
                                 </Card>
                             </Col>
-                            <Col>
+                            <Col style={{ paddingBottom:"2%"}}>
                                 <Card style={{ width: "18rem" }}>
                                     <Carousel variant="top" controls={false}>
                                         <Carousel.Item>
@@ -155,7 +165,7 @@ class MobileAccessories extends Component {
                                     </Card.Body>
                                 </Card>
                             </Col>
-                            <Col>
+                            <Col style={{ paddingBottom:"2%"}}>
                                 <Card style={{ width: "18rem" }}>
                                     <Carousel variant="top" controls={false}>
                                         <Carousel.Item>
@@ -186,10 +196,7 @@ class MobileAccessories extends Component {
                                     </Card.Body>
                                 </Card>
                             </Col>
-                        </Row>
-                                <br/>
-                        <Row>
-                            <Col>
+                            <Col style={{ paddingBottom:"2%"}}>
                                 <Card style={{ width: "18rem"}}>
                                     <Carousel variant="top" controls={false}>
                                         <Carousel.Item>
@@ -220,7 +227,7 @@ class MobileAccessories extends Component {
                                     </Card.Body>
                                 </Card>
                             </Col>
-                            <Col>
+                            <Col style={{ paddingBottom:"2%"}}>
                                 <Card style={{ width: "18rem" }}>
                                     <Carousel variant="top" controls={false}>
                                         <Carousel.Item>
@@ -251,7 +258,7 @@ class MobileAccessories extends Component {
                                     </Card.Body>
                                 </Card>
                             </Col>
-                            <Col>
+                            <Col style={{ paddingBottom:"2%"}}>
                                 <Card style={{ width: "18rem" }}>
                                     <Carousel variant="top" controls={false}>
                                         <Carousel.Item>
@@ -282,10 +289,7 @@ class MobileAccessories extends Component {
                                     </Card.Body>
                                 </Card>
                             </Col>
-                        </Row>
-                            <br/>
-                        <Row>
-                            <Col>
+                            <Col style={{ paddingBottom:"2%"}}>
                                 <Card style={{ width: "18rem"}}>
                                     <Carousel variant="top" controls={false}>
                                         <Carousel.Item>
@@ -316,7 +320,7 @@ class MobileAccessories extends Component {
                                     </Card.Body>
                                 </Card>
                             </Col>
-                            <Col>
+                            <Col style={{ paddingBottom:"2%"}}>
                                 <Card style={{ width: "18rem" }}>
                                     <Carousel variant="top" controls={false}>
                                         <Carousel.Item>
@@ -347,7 +351,7 @@ class MobileAccessories extends Component {
                                     </Card.Body>
                                 </Card>
                             </Col>
-                            <Col>
+                            <Col style={{ paddingBottom:"2%"}}>
                                 <Card style={{ width: "18rem" }}>
                                     <Carousel variant="top" controls={false}>
                                         <Carousel.Item>
@@ -378,10 +382,7 @@ class MobileAccessories extends Component {
                                     </Card.Body>
                                 </Card>
                             </Col>
-                        </Row>
-                            <br/>
-                        <Row>
-                            <Col>
+                            <Col style={{ paddingBottom:"2%"}}>
                                 <Card style={{ width: "18rem"}}>
                                     <Carousel variant="top" controls={false}>
                                         <Carousel.Item>
@@ -412,7 +413,7 @@ class MobileAccessories extends Component {
                                     </Card.Body>
                                 </Card>
                             </Col>
-                            <Col>
+                            <Col style={{ paddingBottom:"2%"}}>
                                 <Card style={{ width: "18rem" }}>
                                     <Carousel variant="top" controls={false}>
                                         <Carousel.Item>
@@ -443,7 +444,7 @@ class MobileAccessories extends Component {
                                     </Card.Body>
                                 </Card>
                             </Col>
-                            <Col>
+                            <Col style={{ paddingBottom:"2%"}}>
                                 <Card style={{ width: "18rem" }}>
                                     <Carousel variant="top" controls={false}>
                                         <Carousel.Item>
