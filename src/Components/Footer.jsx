@@ -3,12 +3,14 @@ import { Container, Row, Col, Form, InputGroup, FormControl, Button } from "reac
 import { MdEmail, MdLocationOn, MdCall } from "react-icons/md";
 import { FaFacebookSquare, FaTwitterSquare, FaLinkedin, FaPinterestSquare, FaWhatsappSquare, FaGooglePlusSquare, FaRssSquare } from "react-icons/fa";
 import { FcShop, FcAbout, FcLock, FcFile } from "react-icons/fc";
+import { FaCcMastercard, FaCcVisa, FaCcPaypal, FaCcAmazonPay, FaCcApplePay, FaCcDiscover } from "react-icons/fa";
+import { SiSamsungpay, SiGooglepay } from "react-icons/si";
 
 class Footer extends Component {
  state = {};
  render() {
  return (
-  <div style={{ backgroundColor: "black", color:"white"}}>
+  <div style={{ backgroundColor: "#00251a", color:"white"}}>
     <br/>
       <Container>
           <Row style={{ display: "flex"}}>
@@ -23,6 +25,14 @@ class Footer extends Component {
                       <li>Credit/Debit Card</li>
                       <li>Mobile Wallet</li>
                     </ul>
+                      <FaCcMastercard size="30"/>&nbsp;
+                      <FaCcVisa size="30"/>&nbsp;
+                      <FaCcPaypal size="30"/>&nbsp;
+                      <FaCcAmazonPay size="30"/>&nbsp;
+                      <FaCcApplePay size="30"/>&nbsp;
+                      <FaCcDiscover size="30"/>&nbsp;
+                      <SiSamsungpay size="30"/>&nbsp;
+                      <SiGooglepay size="30"/>
                   </div>
               </Col>
               <Col>
@@ -68,9 +78,9 @@ class Footer extends Component {
                   </div>
               </Col>
           </Row>
-
-<br/>
-
+          
+          <br/>
+          
           <Row style={{ display: "flex"}}>
               <Col>
                   <div>
@@ -110,14 +120,10 @@ class Footer extends Component {
           </Row>
 
       <hr color="white"/>
-        <section align="center">
-          <div>
-            <p>
-              All Rights Reserved. © 2021 <a href="#home">eMart</a>
-            </p>
-          </div>
-        </section>
-        <br/>
+        
+            <div align="center">
+              All Rights Reserved. © 2021 <a href="#home"><img src="/eMart.png" height="30" alt="Logo"/></a>
+            </div>
       </Container>
     </div>
   );
