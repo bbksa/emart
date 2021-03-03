@@ -100,8 +100,8 @@ class Footer extends Component {
                     <hr color ="Yellow"/>
                       <FcAbout size= "20px"/> <a href="about.html" style={{textDecoration:"none", color:"white"}}>About Us</a><br/>
                       <FcShop size= "20px"/> <a href="Product.html" style={{textDecoration:"none", color:"white"}}> Shop</a><br/>
-                      <FcLock size= "20px"/> <a href="#" style={{textDecoration:"none", color:"white"}}> Privacy Policy </a><br/>
-                      <FcFile size= "20px"/> <a href="#" style={{textDecoration:"none", color:"white"}}> Terms &amp; Conditions </a>
+                      <FcLock size= "20px"/> <a href="#privacy" style={{textDecoration:"none", color:"white"}}> Privacy Policy </a><br/>
+                      <FcFile size= "20px"/> <a href="#terms" style={{textDecoration:"none", color:"white"}}> Terms &amp; Conditions </a>
                   </div>
               </Col>
               <Col>

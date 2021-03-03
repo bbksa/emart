@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {Carousel} from "react-bootstrap";
-import { Container, Row, Card, Col, Button, Form, Dropdown } from "react-bootstrap";
+import { Container, Row, Card, Col, Button, Form, Dropdown, Pagination } from "react-bootstrap";
 
 
 class MobileAccessories extends Component {
@@ -42,24 +42,14 @@ class MobileAccessories extends Component {
             </Carousel.Item>
         </Carousel>
 
-        <hr  style={{backgroundColor:"white"}}/>
-        <h6 inline align="center"><b>Sort By:</b> &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="#sort" style={{textDecoration:"none"}}>Price - Low to High</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="#sort" style={{textDecoration:"none"}}>Price - High to Low</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="#sort" style={{textDecoration:"none"}}>New Product</a>
-        </h6>
-        <hr/>
-
+<br/>
         <Container fluid>
             <Row>
                 <Col xs={2.5} >
                     <Container style={{marginLeft: "10%", backgroundColor: "white", height:"100%", width:"100%"}} >
                         <Card.Body>
-                            <Card.Title align={"center"}>Filters <hr color="black"/></Card.Title>
-                            
+                            <h6 align={"center"}><b>Filters</b><hr color="black"/></h6>
                             <Card.Text>
-                                <div >
-                                    
                                     <Form>
                                         <Form.Group controlId="formBasicRange">
                                             <b>Price</b>
@@ -94,7 +84,6 @@ class MobileAccessories extends Component {
                                         <Form.Check type="checkbox" label="Xaumi"/>
                                         <Form.Check type="checkbox" label="Oppo"/>
                                     </Form.Group>
-                                </div>
                             </Card.Text>
                         </Card.Body>
                     </Container>
@@ -103,6 +92,12 @@ class MobileAccessories extends Component {
                 <Col xs={9.8}>
                     <Container style={{ marginLeft: "5%", backgroundColor:"whitesmoke" }}>
                         <Row style={{backgroundColor:"white", paddingTop:"2%", paddingBottom:"2%", paddingLeft:"2.5%"}}>
+                            <h6 inline style={{ paddingLeft:"25%"}}><b>Sort By:</b> &nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="#sort" style={{textDecoration:"none", color:"Black"}}>Price - Low to High</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="#sort" style={{textDecoration:"none", color:"Black"}}>Price - High to Low</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="#sort" style={{textDecoration:"none", color:"Black"}}>New Product</a>
+                                <hr color="black"/>
+                            </h6>
                             <Col style={{ paddingBottom:"2%"}}>
                                 <Card style={{ width: "18rem"}}>
                                     <Carousel variant="top" controls={false}>
@@ -480,7 +475,24 @@ class MobileAccessories extends Component {
                 </Col>
             </Row>
         </Container>
-        <br/>
+        <br/>        
+        <Pagination>
+            <Pagination.First />
+            <Pagination.Prev />
+            <Pagination.Item active>{1}</Pagination.Item>
+            <Pagination.Ellipsis />
+
+            <Pagination.Item>{10}</Pagination.Item>
+            <Pagination.Item>{11}</Pagination.Item>
+            <Pagination.Item>{12}</Pagination.Item>
+            <Pagination.Item>{13}</Pagination.Item>
+            <Pagination.Item disabled>{14}</Pagination.Item>
+
+            <Pagination.Ellipsis />
+            <Pagination.Item>{20}</Pagination.Item>
+            <Pagination.Next />
+            <Pagination.Last />
+        </Pagination>
       </div>
     );
   }
