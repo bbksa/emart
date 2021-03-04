@@ -36,7 +36,7 @@ class MobileAccessories extends Component {
         <Container fluid>
             <Row>
                 <Col xs={2.5} >
-                    <Container style={{marginLeft: "10%", backgroundColor: "white", height:"100%", width:"100%"}} >
+                    <Container style={{marginLeft: "8%", backgroundColor: "white", height:"100%", width:"100%" }} >
                         <Card.Body>
                             <h6 align={"center"}><b>Filters</b><hr color="black"/></h6>
                             <Card.Text>
@@ -81,14 +81,16 @@ class MobileAccessories extends Component {
                 </Col>
                 
                 <Col xs={9.8}>
-                    <Container style={{ marginLeft: "5%", backgroundColor:"whitesmoke" }}>
-                        <Row style={{backgroundColor:"white", paddingTop:"2%", paddingBottom:"2%", paddingLeft:"2.5%"}}>
+                    <Container style={{ marginLeft: "4%", backgroundColor:"whitesmoke" }}>
+                        <Row style={{backgroundColor:"white", paddingTop:"2%", paddingLeft:"2.5%"}}>
                             <h6 inline style={{ paddingLeft:"25%"}}><b>Sort By:</b> &nbsp;&nbsp;&nbsp;&nbsp;
                                 <a href="#sort" style={{textDecoration:"none", color:"Black"}}>Price - Low to High</a>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <a href="#sort" style={{textDecoration:"none", color:"Black"}}>Price - High to Low</a>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <a href="#sort" style={{textDecoration:"none", color:"Black"}}>New Product</a>
                                 <hr color="black"/>
                             </h6>
+                            </Row>
+                            <Row style={{backgroundColor:"white", paddingRight:"2.5%", paddingLeft:"2.5%"}}>
                             <Col style={{ paddingBottom:"2%"}}>
                                 <Card style={{ width: "18rem"}}>
                                     <Carousel variant="top" controls={false}>

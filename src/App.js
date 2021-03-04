@@ -7,18 +7,20 @@ import Sliders from "./Components/Sliders.jsx";
 import ItemOnHome from "./Components/ItemList.jsx";
 import MobileAccessories from "./Components/MobileAccessories.jsx";
 import Order from "./Components/Order.jsx";
+import Cart from "./Components/Cart.jsx";
 import Footer from "./Components/Footer.jsx";
 
 function App() {
   return (
     <div>
       <TopNav/>
-      {/* <CategoriesNavigation/> */}
+      <CategoriesNavigation/>
       {/* <UserLog/> */}
       {/* <Sliders/> */}
       {/* <ItemOnHome/> */}
-      {/* <MobileAccessories/> */}
+      <MobileAccessories/>
       <Order/>
+      <Cart/>
       <Footer/>
       
     </div>

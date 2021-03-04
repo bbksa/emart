@@ -63,7 +63,7 @@ class UserLog extends Component {
             <Col sm={7}>
               <Container>
                 <img
-                  src="Images/login.png"
+                  src="Images/login.png" alt="login"
                   style={{ height: "600px", width: "635px" }}
                 ></img>
               </Container>
