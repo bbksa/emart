@@ -7,7 +7,7 @@ class CategoriesNavigation extends Component {
 
   render() {
     return (
-      <div style={{ display:"flex", backgroundColor: "white", paddingLeft: 175, paddingTop: 5, align: "center" }}>
+      <div style={{ display:"flex", backgroundColor: "#e0f2f1", paddingLeft: 175, paddingTop: 5, align: "center" }}>
         <Nav variant="pills" activeKey="1" onSelect={this.handleSelect}>
         <Container>
           <Row align={"center"}>
@@ -33,7 +33,7 @@ class CategoriesNavigation extends Component {
             </Col>
 
             <Col>
-              <img variant="top" src="/Images/smart.jpg" alt="smart" height="100" width="150"/>
+              <img variant="top" src="/Images/smart.png" alt="smart" height="100" width="150"/>
               <NavDropdown title="Smart Devices" id="nav-dropdown">
                 <NavDropdown.Item eventKey="4.1">Smart Wearables</NavDropdown.Item>
                 <NavDropdown.Item eventKey="4.2">Smart Home</NavDropdown.Item>
@@ -41,7 +41,7 @@ class CategoriesNavigation extends Component {
             </Col>
 
             <Col>
-              <img variant="top" src="/Images/gadgets.jpeg" alt="gadget" height="100" width="120"/>
+              <img variant="top" src="/Images/gadgets.png" alt="gadget" height="100" width="125"/>
               <NavDropdown title="Gadgets" id="nav-dropdown">
                 <NavDropdown.Item eventKey="4.1">Camera and Accessories</NavDropdown.Item>
                 <NavDropdown.Item eventKey="4.2">Tablets</NavDropdown.Item>

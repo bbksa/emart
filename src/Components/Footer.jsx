@@ -16,9 +16,8 @@ class Footer extends Component {
           <Row style={{ display: "flex"}}>
               <Col>
                   <div> 
-                    <h3>Payment Services</h3>
+                    <h3>We accept...</h3>
                     <hr color ="Yellow"/>
-                    <h5>We accept...</h5>
                     <ul>
                       <li>Cass on Delivery</li>
                       <li>Bank Payment</li>
@@ -124,6 +123,7 @@ class Footer extends Component {
             <div align="center">
               All Rights Reserved. © 2021 <a href="#home"><img src="/eMart.png" height="30" alt="Logo"/></a>
             </div>
+            <br/>
       </Container>
     </div>
   );

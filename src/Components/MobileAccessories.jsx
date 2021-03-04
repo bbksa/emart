@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import {Carousel} from "react-bootstrap";
 import { Container, Row, Card, Col, Button, Form, Dropdown, Pagination } from "react-bootstrap";
 
-
 class MobileAccessories extends Component {
   state = {};
   render() {
@@ -21,18 +20,8 @@ class MobileAccessories extends Component {
                 </a>
             </Carousel.Item>
             <Carousel.Item>
-                <a href="#s2">
-                    <img className="d-block w-100" src="/Images/Slide/Ms3.jpg" height="300px" alt="Second slide"/>
-                </a>
-            </Carousel.Item>
-            <Carousel.Item>
                 <a href="#s3">
                     <img className="d-block w-100" src="/Images/Slide/Ms4.png" height="300px" alt="Third slide"/>
-                </a>
-            </Carousel.Item>
-            <Carousel.Item>
-                <a href="#s2">
-                    <img className="d-block w-100" src="/Images/Slide/Ms5.png" height="300px" alt="Second slide"/>
                 </a>
             </Carousel.Item>
             <Carousel.Item>
@@ -41,8 +30,9 @@ class MobileAccessories extends Component {
                 </a>
             </Carousel.Item>
         </Carousel>
+        
+        <br/>
 
-<br/>
         <Container fluid>
             <Row>
                 <Col xs={2.5} >
@@ -85,6 +75,7 @@ class MobileAccessories extends Component {
                                         <Form.Check type="checkbox" label="Oppo"/>
                                     </Form.Group>
                             </Card.Text>
+                            
                         </Card.Body>
                     </Container>
                 </Col>
@@ -113,15 +104,15 @@ class MobileAccessories extends Component {
                                         </Carousel.Item>
                                         <Carousel.Item>
                                             <a href="#s2">
-                                                <img className="d-block w-100" src="/Images/Slide/Ms3.jpg" height="250px" alt="Second slide"/>
+                                                <img className="d-block w-100" src="/Images/Slide/Ms4.png" height="250px" alt="Second slide"/>
                                             </a>
                                         </Carousel.Item>
                                     </Carousel>
                                     <Card.Body>
                                         <Card.Title align={"center"}>Samsung Level U2</Card.Title>
                                         <Card.Text align={"center"}>
-                                            <b>₹ 18,99</b> &nbsp;&nbsp;
-                                            <strike style={{ color: "red" }}>₹ 24,99</strike>&nbsp;&nbsp;
+                                            <b>₹ 1,899</b> &nbsp;&nbsp;
+                                            <strike style={{ color: "red" }}>₹ 2,499</strike>&nbsp;&nbsp;
                                             <b style={{ color: "green" }}>12% off</b>
                                         </Card.Text>
                                         <Button variant="primary">Buy Now</Button>
@@ -144,7 +135,7 @@ class MobileAccessories extends Component {
                                         </Carousel.Item>
                                         <Carousel.Item>
                                             <a href="#s2">
-                                                <img className="d-block w-100" src="/Images/Slide/Ms3.jpg" height="250px" alt="Second slide"/>
+                                                <img className="d-block w-100" src="/Images/Slide/Ms4.png" height="250px" alt="Second slide"/>
                                             </a>
                                         </Carousel.Item>
                                     </Carousel>
@@ -175,7 +166,7 @@ class MobileAccessories extends Component {
                                         </Carousel.Item>
                                         <Carousel.Item>
                                             <a href="#s2">
-                                                <img className="d-block w-100" src="/Images/Slide/Ms3.jpg" height="250px" alt="Second slide"/>
+                                                <img className="d-block w-100" src="/Images/Slide/Ms4.png" height="250px" alt="Second slide"/>
                                             </a>
                                         </Carousel.Item>
                                     </Carousel>
@@ -206,7 +197,7 @@ class MobileAccessories extends Component {
                                         </Carousel.Item>
                                         <Carousel.Item>
                                             <a href="#s2">
-                                                <img className="d-block w-100" src="/Images/Slide/Ms3.jpg" height="250px" alt="Second slide"/>
+                                                <img className="d-block w-100" src="/Images/Slide/Ms4.png" height="250px" alt="Second slide"/>
                                             </a>
                                         </Carousel.Item>
                                     </Carousel>
@@ -237,7 +228,7 @@ class MobileAccessories extends Component {
                                         </Carousel.Item>
                                         <Carousel.Item>
                                             <a href="#s2">
-                                                <img className="d-block w-100" src="/Images/Slide/Ms3.jpg" height="250px" alt="Second slide"/>
+                                                <img className="d-block w-100" src="/Images/Slide/Ms4.png" height="250px" alt="Second slide"/>
                                             </a>
                                         </Carousel.Item>
                                     </Carousel>
@@ -268,7 +259,7 @@ class MobileAccessories extends Component {
                                         </Carousel.Item>
                                         <Carousel.Item>
                                             <a href="#s2">
-                                                <img className="d-block w-100" src="/Images/Slide/Ms3.jpg" height="250px" alt="Second slide"/>
+                                                <img className="d-block w-100" src="/Images/Slide/Ms4.png" height="250px" alt="Second slide"/>
                                             </a>
                                         </Carousel.Item>
                                     </Carousel>
@@ -299,7 +290,7 @@ class MobileAccessories extends Component {
                                         </Carousel.Item>
                                         <Carousel.Item>
                                             <a href="#s2">
-                                                <img className="d-block w-100" src="/Images/Slide/Ms3.jpg" height="250px" alt="Second slide"/>
+                                                <img className="d-block w-100" src="/Images/Slide/Ms4.png" height="250px" alt="Second slide"/>
                                             </a>
                                         </Carousel.Item>
                                     </Carousel>
@@ -330,7 +321,7 @@ class MobileAccessories extends Component {
                                         </Carousel.Item>
                                         <Carousel.Item>
                                             <a href="#s2">
-                                                <img className="d-block w-100" src="/Images/Slide/Ms3.jpg" height="250px" alt="Second slide"/>
+                                                <img className="d-block w-100" src="/Images/Slide/Ms4.png" height="250px" alt="Second slide"/>
                                             </a>
                                         </Carousel.Item>
                                     </Carousel>
@@ -361,7 +352,7 @@ class MobileAccessories extends Component {
                                         </Carousel.Item>
                                         <Carousel.Item>
                                             <a href="#s2">
-                                                <img className="d-block w-100" src="/Images/Slide/Ms3.jpg" height="250px" alt="Second slide"/>
+                                                <img className="d-block w-100" src="/Images/Slide/Ms4.png" height="250px" alt="Second slide"/>
                                             </a>
                                         </Carousel.Item>
                                     </Carousel>
@@ -392,7 +383,7 @@ class MobileAccessories extends Component {
                                         </Carousel.Item>
                                         <Carousel.Item>
                                             <a href="#s2">
-                                                <img className="d-block w-100" src="/Images/Slide/Ms3.jpg" height="250px" alt="Second slide"/>
+                                                <img className="d-block w-100" src="/Images/Slide/Ms4.png" height="250px" alt="Second slide"/>
                                             </a>
                                         </Carousel.Item>
                                     </Carousel>
@@ -423,7 +414,7 @@ class MobileAccessories extends Component {
                                         </Carousel.Item>
                                         <Carousel.Item>
                                             <a href="#s2">
-                                                <img className="d-block w-100" src="/Images/Slide/Ms3.jpg" height="250px" alt="Second slide"/>
+                                                <img className="d-block w-100" src="/Images/Slide/Ms4.png" height="250px" alt="Second slide"/>
                                             </a>
                                         </Carousel.Item>
                                     </Carousel>
@@ -454,7 +445,7 @@ class MobileAccessories extends Component {
                                         </Carousel.Item>
                                         <Carousel.Item>
                                             <a href="#s2">
-                                                <img className="d-block w-100" src="/Images/Slide/Ms3.jpg" height="250px" alt="Second slide"/>
+                                                <img className="d-block w-100" src="/Images/Slide/Ms4.png" height="250px" alt="Second slide"/>
                                             </a>
                                         </Carousel.Item>
                                     </Carousel>
