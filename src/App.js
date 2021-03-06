@@ -13,16 +13,15 @@ import Footer from "./Components/Footer.jsx";
 function App() {
   return (
     <div>
-      <TopNav/>
-      <CategoriesNavigation/>
-      {/* <UserLog/> */}
-      {/* <Sliders/> */}
-      {/* <ItemOnHome/> */}
-      <MobileAccessories/>
-      <Order/>
-      <Cart/>
-      <Footer/>
-      
+      {/* <UserLog /> */}
+      <TopNav />
+      <CategoriesNavigation />
+      {/* <Sliders /> */}
+      {/* <ItemOnHome /> */}
+      {/* <MobileAccessories /> */}
+      <Order />
+      <Cart />
+      <Footer />
     </div>
   );
 }
