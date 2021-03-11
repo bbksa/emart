@@ -9,19 +9,55 @@ import MobileAccessories from "./Components/MobileAccessories.jsx";
 import Order from "./Components/Order.jsx";
 import Cart from "./Components/Cart.jsx";
 import Footer from "./Components/Footer.jsx";
+import About from "./Components/About.jsx";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      {/* <UserLog /> */}
-      <TopNav />
-      <CategoriesNavigation />
-      {/* <Sliders /> */}
-      {/* <ItemOnHome /> */}
-      {/* <MobileAccessories /> */}
-      <Order />
-      <Cart />
-      <Footer />
+      <Router>
+        <Switch>
+          <Route exact path="/signin">
+            <UserLog />
+          </Route>
+
+          <Route exact path="/home">
+            <TopNav />
+            <CategoriesNavigation />
+            <Sliders />
+            <ItemOnHome />
+            <Footer />
+          </Route>
+
+          <Route exact path="/Mobile">
+            <TopNav />
+            <CategoriesNavigation />
+            <MobileAccessories />
+            <Footer />
+          </Route>
+
+          <Route exact path="/order">
+            <TopNav />
+            <CategoriesNavigation />
+            <Order />
+            <Footer />
+          </Route>
+
+          <Route exact path="/cart">
+            <TopNav />
+            <CategoriesNavigation />
+            <Cart />
+            <Footer />
+          </Route>
+
+          <Route exact path="/about">
+            <TopNav />
+            <CategoriesNavigation />
+            <About />
+            <Footer />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
